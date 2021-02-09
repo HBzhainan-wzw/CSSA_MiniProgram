@@ -9,6 +9,10 @@
 
 
     "pages/confessWall/confessWall",
+    "pages/ConfessWallEntrance/ConfessWallEntrance",
+    "pages/ConfessWallPage2/ConfessWallPage2",
+    "pages/ConfessWallPost/ConfessWallPost",
+    "pages/ConfessWallWatch/ConfessWallWatch",
 
     "pages/sponsorList/sponsorList",
     "pages/Sponsors/sponsor1/sponsor1",
@@ -19,6 +23,7 @@
     "pages/Response/response",
     "pages/SpringPosterEntrance/SpringPosterEntrance",
     "pages/SelectionIntro/SelectionIntro",
+    
     "pages/Selection/Selection",
     "pages/createPoster/Create"
   ],
@@ -39,6 +44,10 @@
         "iconPath": "images/index_0.png",
         "selectedIconPath": "images/index_1.png",
         "text": "首页"
+      },
+      {
+        "pagePath": "pages/ConfessWallEntrance/ConfessWallEntrance",
+        "text": "spring"
       },
       {
         "pagePath": "pages/user/user",

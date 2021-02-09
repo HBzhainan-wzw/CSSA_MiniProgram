@@ -1,0 +1,3 @@
+<!--pages/ConfessWallEntrance/ConfessWallEntrance.wxml-->
+<text>表白墙首页</text>
+<button bindtap="ConfessWallStartButton">开始</button>

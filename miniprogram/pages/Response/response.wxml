@@ -1,0 +1,34 @@
+<view class='readmore'>
+  <view class='overview'>
+    <view class='title-tip'>UCSB CSSA微信小程序免责声明</view>
+    <view class='content {{}}'>
+      <view>
+      <text>\n</text>
+    </view>
+      1. 本UCSBCSSA微信小程序由UCSB CSSA外联部创办，最终解释权归UCSB CSSA所有。本小程序供的文本、图像、屏幕以及其他材料的版权归UCSB
+      CSSA或第三方所有。任何媒体、网站或个人未经本网站协议授权不得转载、 链接、转贴或以其他方式复制发表。
+    </view>
+    <view class='emptyline{{}}'><text>\n</text></view>
+    <view class='content {{}}'>
+      2. 本小程序遵守国家各项法律法规，严禁发布各类违法信息。
+    </view>
+    <view class='emptyline{{}}'><text>\n</text></view>
+    <view class='content {{}}'>
+      3.
+      本小程序只负责审核文字和图片信息，可确保文字和图片信息的完全合法。至于网友发布的微信群、公众号、个人号，本小程序无权审查其内部有无发布色情、赌博、诈骗等违法信息，也无从判断其是否违法。所以本站并不承担任何连带责任，请各位网民仔细辨别。
+    </view>
+    <view class='emptyline{{}}'><text>\n</text></view>
+    <view class='content {{}}'>
+      4. 本小程序内发布的所有广告内容，本小程序仅承担宣传作用。任何个人或组织，不得借靠本网站的传播力度，发布任何违法相关法律的内容和二维码，否则，本小程序将保留法律自护的权利。
+    </view>
+    <view class='emptyline{{}}'><text>\n</text></view>
+    <view class='content {{}}'>
+      5. 本小程序在尽可能的前提下会及时删除已经确认的违法信息，如国家有关部门发现本站存在违法信息，可通知本小程序，本小程序会在第一时间予以删除。
+    </view>
+    <view class='emptyline{{}}'><text>\n</text></view>
+    <view class='content {{}}'>
+      6. 如果您发现本小程序内容有侵犯您的权益，请与我们取得联系，我们会及时修改或删除。
+    </view>
+  </view>
+
+</view>

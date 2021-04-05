@@ -6,14 +6,6 @@
     "pages/ClassGroup/ClassGroup",
     "pages/ClassQRCode/ClassQRCode",
     "pages/CSSAintro/CSSAintro",
-
-
-    "pages/confessWall/confessWall",
-    "pages/ConfessWallEntrance/ConfessWallEntrance",
-    "pages/ConfessWallPage2/ConfessWallPage2",
-    "pages/ConfessWallPost/ConfessWallPost",
-    "pages/ConfessWallWatch/ConfessWallWatch",
-
     "pages/sponsorList/sponsorList",
     "pages/Sponsors/sponsor1/sponsor1",
     "pages/Sponsors/sponsor2/sponsor2",
@@ -31,7 +23,7 @@
     "backgroundColor": "#F4DD73",
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#F6F6F6",
-    "navigationBarTitleText": "MyCSSA",
+    "navigationBarTitleText": "MyUCSB",
     "navigationBarTextStyle": "black"
   },
   "tabBar": {
@@ -44,10 +36,6 @@
         "iconPath": "images/index_0.png",
         "selectedIconPath": "images/index_1.png",
         "text": "首页"
-      },
-      {
-        "pagePath": "pages/ConfessWallEntrance/ConfessWallEntrance",
-        "text": "spring"
       },
       {
         "pagePath": "pages/user/user",

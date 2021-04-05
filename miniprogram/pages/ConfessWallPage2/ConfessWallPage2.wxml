@@ -1,4 +1,0 @@
-<!--pages/ConfessWallPage2/ConfessWallPage2.wxml-->
-<text>表白墙Intro和文案</text>
-<button bindtap="ThrowDogFood">发表白【撒狗粮】</button>
-<button bindtap="EatWatermelon">看表白【吃瓜】</button>

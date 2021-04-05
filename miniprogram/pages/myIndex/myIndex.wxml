@@ -1,26 +1,9 @@
 <!--pages/myIndex/myIndex.wxml-->
 
-<view wx:if="{{isHide}}">
-    <view wx:if="{{canIUse}}" >
-        <view class='header'>
-            <image src='/images/wx_login.jpg'></image>
-        </view>
- 
-        <view class='content'>
-            <view>申请获取以下权限</view>
-            <text>获得你的公开信息(昵称，头像等)</text>
-            <text>用于：个人页面 生成个人海报</text>
-        </view>
- 
-        <button class='bottom' type='primary' open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="bindGetUserInfo">
-            授权登录
-        </button>
-    </view>
-    <view wx:else>请升级微信版本</view>
-</view>
 
 
-<view wx:else>
+
+
 
   <view class="container">
     <!-- poster 滚动图层 -->
@@ -74,7 +57,3 @@
     <image class="blogEntry" src="https://s3.ax1x.com/2021/01/31/yEDXu9.png" bindtap="OnNavigate2"></image>
     <!-- <web-view src="https://mp.weixin.qq.com/s/OwdJ-4uagDEbAsZ0ikN7dQ"></web-view>-->
   </view>
-
-
-
-</view>

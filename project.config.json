@@ -2,7 +2,7 @@
   "miniprogramRoot": "miniprogram/",
   "cloudfunctionRoot": "cloudfunctions/",
   "setting": {
-    "urlCheck": false,
+    "urlCheck": true,
     "es6": true,
     "enhance": true,
     "postcss": true,
@@ -21,7 +21,7 @@
     "compileHotReLoad": false,
     "useMultiFrameRuntime": true,
     "useApiHook": true,
-    "useApiHostProcess": false,
+    "useApiHostProcess": true,
     "babelSetting": {
       "ignore": [],
       "disablePlugins": [],
@@ -37,8 +37,8 @@
     "packNpmRelationList": [],
     "minifyWXSS": true
   },
-  "appid": "wxdc13141df6162523",
-  "projectname": "MyCSSA",
+  "appid": "wx061eb257bdfa8603",
+  "projectname": "MyUCSB",
   "libVersion": "2.8.1",
   "simulatorType": "wechat",
   "simulatorPluginLibVersion": {},

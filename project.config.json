@@ -38,7 +38,7 @@
     "minifyWXSS": true
   },
   "appid": "wx061eb257bdfa8603",
-  "projectname": "MyUCSB",
+  "projectname": "CSSA_MiniProgram",
   "libVersion": "2.8.1",
   "simulatorType": "wechat",
   "simulatorPluginLibVersion": {},

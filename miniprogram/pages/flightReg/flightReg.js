@@ -51,9 +51,7 @@ Page({
       wx.navigateTo({
         url: '../flightReg2/flightReg2?account=' + JSON.stringify(ac) + '&name=' + JSON.stringify(nm) + '&haveTicket=' + JSON.stringify(tk),
       })
-
     }
-
   },
   onLoad: function (options) {
 
@@ -69,12 +67,14 @@ Page({
    */
   onShow: function () {
 
+
   },
 
   /**
    * 生命周期函数--监听页面隐藏
    */
   onHide: function () {
+
 
   },
 
@@ -83,12 +83,14 @@ Page({
    */
   onUnload: function () {
 
+
   },
 
   /**
    * 页面相关事件处理函数--监听用户下拉动作
    */
   onPullDownRefresh: function () {
+
 
   },
 
@@ -97,6 +99,7 @@ Page({
    */
   onReachBottom: function () {
 
+
   },
 
   /**
@@ -104,5 +107,6 @@ Page({
    */
   onShareAppMessage: function () {
 
+    
   }
 })

@@ -1,0 +1,56 @@
+/* pages/flightReg/flightReg.wxss */
+@import "../vrfPage/weui.wxss";
+
+.headerImg{
+  top: 0;
+  width: 100%;
+}
+.title{
+  position: relative;
+  top: 50rpx;
+  font-size: 130%;
+  left: 100rpx;
+}
+
+.txt{
+  position: relative;
+  width: 650rpx;
+  top: 100rpx;
+  left:50rpx;
+  color: gray;
+}
+
+.checkbox{
+  position: relative;
+  left:150rpx;
+  top: 150rpx;
+}
+.input{
+  height: 80rpx;
+  width: 400rpx;
+  color: #000;
+}
+.textbox{
+  position: relative;
+  top: 150rpx;
+  left: 150rpx;
+  height: 80rpx;
+  width: 400rpx;
+  background-color: #fff;
+  color: #fff;
+  border-radius: 8%;
+}
+.blank{
+  position: relative;
+  height: 20rpx;
+}
+.button{
+  position: relative;
+  top: 150rpx;
+}
+.annouce{
+  position: relative;
+  left:400rpx;
+  top:100rpx;
+  color: cornflowerblue;
+}

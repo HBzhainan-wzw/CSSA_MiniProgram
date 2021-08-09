@@ -1,6 +1,6 @@
 <!--pages/CSSAintro/CSSAintro.wxml-->
 <view class = "container">
-  <image class="headerImg" src="https://s3.ax1x.com/2021/01/09/sMpHDe.png"></image>
+  <image class="headerImg" src="cloud://wxapp-6gh5rfvs8d751a11.7778-wxapp-6gh5rfvs8d751a11-1305177527/CSSAIntro/introHeader.png"></image>
   <view class="blank"></view>
   <text class="text">中国学生学者联合会CSSA (Chinese Students and Scholars Association)是中国驻洛杉矶总领事馆指导下的非盈利性组织。其主要宗旨是:对外代表联合会全体会员,维护其在学习、工作、生活中的正当权益;为会员提供生活、娱乐、工作、就业方面的必要服务与帮助,促进中美文化交流等。CSSA的服务对象为所有在校中国本科生,中国研究生以及中国学者群体。UCSB CSSA由150余名成员组成。每年, CSSA举办30余场大型活动,类型涉及娱乐、交友、校园招聘、求职规划、暑校、体育竞技、知识竞赛等的活动,包括新生见面会、中秋晚会、Supernova歌唱大赛、春节联欢晚会、一周情侣、企业线下宣讲会、5v5篮球赛等。与此同时, CSSA与中国驻洛杉矶大使馆、学校国际生办公室均保持密切联系,以确保在华人学生有困难时,第一时间向官方组织获取帮助。</text>
   <view class="blank"></view>

@@ -1,4 +1,4 @@
-// pages/Sponsors/sponsor5/sponsor5.js
+// pages/flightAnc/flightAnc.js
 Page({
 
   /**

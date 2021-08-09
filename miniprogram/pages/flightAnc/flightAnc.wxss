@@ -1,0 +1,15 @@
+/* pages/flightAnc/flightAnc.wxss */
+.title{
+  position: relative;
+  top: 50rpx;
+  font-size: 130%;
+  left: 100rpx;
+}
+
+.txt{
+  position: relative;
+  width: 650rpx;
+  top: 100rpx;
+  left:50rpx;
+  color: gray;
+}

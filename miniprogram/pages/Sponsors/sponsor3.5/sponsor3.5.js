@@ -13,7 +13,7 @@ Page({
       nav:"../sponsor3.5/sponsor3.5",
       address:"Downtown Los Angeles, CA",
       name:"STEEZY Studio",
-      url:"https://s3.ax1x.com/2021/01/19/sgDgWd.png", //demo url
+      url:"cloud://wxapp-6gh5rfvs8d751a11.7778-wxapp-6gh5rfvs8d751a11-1305177527/Sponsors/Sponsor3.png", //demo url
       text:"美国知名舞室，提供在线舞蹈课程，由世界上最好的舞者授课。舞蹈类型 - 覆盖多舞种并不断更新：目前有韩舞，嘻哈（hiphop），流行编舞（popular choreography），地板舞/霹雳舞（breaking），健身舞，舞厅/雷鬼（dancehall），高跟鞋舞（heels），狂派舞（krump），lite feet，甩手舞（whacking），震撼舞（popping），以及舞蹈技巧课tips&lectures。提供网站和平板、手机APP等多种使用端口，上课方式为录播，镜面正面背面可选，速度可调，可全方位360º看instructor的动作、使用先进的分屏功能（一半屏幕可以看到自己，一半屏幕看到instructor），方便对比动作。课程类型包括基础动作breakdown讲解、完展编舞分解讲解，以及名师课堂，由国际知名舞者教授，还可以为你推送的每日的私人订制系列课程。STEEZY还提供舞者讨论的平台，包括Instagram、Facebook group等等，还有有趣的开party功能，让你可以与你的小伙伴们一起上课。\n\n优惠：50% off a yearly subscription plan for the first year\n\n地址：Downtown Los Angeles, CA"
     },
     isMember:false,

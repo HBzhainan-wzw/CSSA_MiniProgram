@@ -1,0 +1,66 @@
+<!--pages/flightReg2/flightReg2.wxml-->
+<view>
+  <view wx:if="{{showComplete}}">
+    <view class="title">感谢您的报名！请扫码联系我们的工作人员以获取更多信息</view>  
+    <image class="groupQR" src="cloud://wxapp-6gh5rfvs8d751a11.7778-wxapp-6gh5rfvs8d751a11-1305177527/flightReg/group.jpg" ></image>
+    <view class="staffQRcontainer">
+      <image class="staffQR" src = "cloud://wxapp-6gh5rfvs8d751a11.7778-wxapp-6gh5rfvs8d751a11-1305177527/flightReg/staff1.jpg"></image>
+      <image class="staffQR" src = "cloud://wxapp-6gh5rfvs8d751a11.7778-wxapp-6gh5rfvs8d751a11-1305177527/flightReg/staff2.jpg"></image>
+    </view>
+    <view class="staffQRcontainer">
+      <image class="staffQR" src = "cloud://wxapp-6gh5rfvs8d751a11.7778-wxapp-6gh5rfvs8d751a11-1305177527/flightReg/staff3.png"></image>
+      <image class="staffQR" src = "cloud://wxapp-6gh5rfvs8d751a11.7778-wxapp-6gh5rfvs8d751a11-1305177527/flightReg/staff4.png"></image>
+    </view>
+    <button size="default" class="button" bindtap="clickButton" type="primary">完成</button>
+  </view>
+  <view wx:if="{{!showComplete}}">
+  <view>
+  <view class="title">请填写您的航班号</view>
+  <view class="textbox">
+    <input class="input" placeholder="例如：CA770" maxlength="18" placeholder-style="color: grey" bindinput="flightCodeInput"></input>
+  </view>
+
+  <view class="blank"> </view>  
+  <view class="title">请选择航班到达日期</view>
+  <view class="txt">请以美西时间为准。9.16及以后到达的同学请注意，填写此表不代表CSSA将保证安排车辆接机，接机班次与时间将由报名人数决定，若人数过少，学联将取消当天的接机活动。为方便同学规划行程，我们将于7.31当天截止报名后通知各位同学无法启动的班次。如果您需要了解自行安排接机的途径，欢迎咨询我们cssa的学长学姐。</view>
+
+  <view class="textbox">
+    <picker mode="date" value="{{date}}" start = "2021-09-12"  end = "2021-09-20" bindchange="bindDateChange">
+      <view class="datePicker">{{date}}</view>
+    </picker>
+  </view>
+    
+  <view class="container">
+    <view class="title" style="left: 0rpx">请选择偏好当天接机时间</view>
+    <view class="txt" style="left: 0rpx" >请以美西时间为准。LAX机场出关时间较长，请合理安排您的时间，建议选择您的到达时间+2小时。若您选择是接机时间人数较少，将与就近时间的班次合并.</view>
+    <view class="container2">
+      <radio-group class="radioSelection" bindchange="radioChange">
+       <label class="label" wx:for="{{items}}" wx:key="{{item.value}}">
+          <view class="weui-cell__hd">
+           <radio value="{{item.value}}" checked="{{item.checked}}"/>
+         </view>
+          <view class="weui-cell__bd">{{item.name}}</view>
+       </label>      
+      </radio-group>
+    </view>
+  </view>
+  </view>
+
+  <view class="title" style="top:150rpx">请告知您的住所</view>
+  <view class="txt" style="top:160rpx" >学校暂未明确最早入住学校宿舍时间，是否能半夜办理入住手续。 若您赴美时间较早/深夜抵达，您是否订了酒店？
+  本次接机活动学联只负责将同学送至学校宿舍或学校周边的酒店，不负责学生的住宿问题。
+  CSSA正积极与学校取得联系，若有关于办理入住的消息将第一时间知会。 
+  </view>
+  <view class="container2" style="left: 50rpx; top:200rpx;">
+      <radio-group class="radioSelection" bindchange="targetChange">
+       <label class="label" wx:for="{{hotel}}" wx:key="{{item.value}}">
+          <view class="weui-cell__hd">
+           <radio value="{{item.value}}" checked="{{item.checked}}"/>
+          </view>
+          <view>{{item.name}}</view>
+       </label>      
+      </radio-group>
+    </view>
+  <button size="default" class="button2" bindtap="onSubmit" type="primary">确认并提交</button>
+  </view>
+</view>

@@ -49,7 +49,6 @@ Page({
     this.setData({
       perm: e.detail.value
     })
-    
   },
   clickButton: function(){
     var perm = this.data.perm

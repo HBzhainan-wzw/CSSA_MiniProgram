@@ -12,7 +12,7 @@ Page({
         nav:"../sponsor1.5/sponsor1.5",
         address:"https://k.koudai.com/fN1avZ2m",
         name:"UCSB CSSA电子商城",
-        url:"https://s3.ax1x.com/2021/01/19/sgNQE9.png", //demo url
+        url:"cloud://wxapp-6gh5rfvs8d751a11.7778-wxapp-6gh5rfvs8d751a11-1305177527/Sponsors/Sponsor1.png", //demo url
         text:"CSSA特联系到正规渠道代理商（资质已严格审查，同学们可以放心购买！）联合上线CSSA华为/苹果商城，为同学们提供大额学生优惠。\n\n优惠：商品均享受10-200大额现金优惠\n额外优惠9.8折。\n\n地址：UCSB CSSA电子商城 https://k.koudai.com/fN1avZ2m\n\n电话：188-3886-5588"        
       },
     isMember:false,

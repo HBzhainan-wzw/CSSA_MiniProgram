@@ -3,36 +3,6 @@ const app = getApp()
 Page({
 // 四个按钮的贴图+链接+导航方式
   data: {
-    
-
-    imageItems: [{
-      id: 0,
-      link: "https://s3.ax1x.com/2020/11/24/DNZQaR.jpg",
-    }, {
-      id: 1,
-      link: "https://s3.ax1x.com/2021/02/01/yZ4Ruq.jpg",
-    }, {
-      id: 2,
-      link: "https://s3.ax1x.com/2020/11/24/DNKqaQ.png",
-    }],
-    imgs1:[
-      { url: 'https://s3.ax1x.com/2021/01/06/sVVlqJ.png', 
-        name: '商家优惠',
-        id:"0",
-        navigator: "sponsorNavigate"},
-      { url: 'https://s3.ax1x.com/2021/01/06/sVmPKO.png', 
-        name: '表白墙',
-        id:"1",
-        navigator: "confessWallNavigate"},
-      { url: 'https://s3.ax1x.com/2021/01/06/sVmMM8.png', 
-        name: '课群',
-        id:"2",
-        navigator: "courseGroupNavigate"},
-      { url: 'https://s3.ax1x.com/2021/01/09/sM9uKU.png', 
-        name: 'CSSA',
-        id:"3",
-        navigator: "introNavigate"},
-    ],
     info:""
   },
   sponsorNavigate: function (e) {
@@ -41,9 +11,9 @@ Page({
 
     })
   },
-  springNavigate: function(e){
+  flightNavigate: function(e){
     wx.navigateTo({
-      url: '../SpringPosterEntrance/SpringPosterEntrance',
+      url: '../flightReg/flightReg',
     })
   },
   confessWallNavigate: function (e) {
@@ -62,14 +32,11 @@ Page({
     })
   },
   //跳转对应的blog
-  OnNavigate1: function(e){
+  OnNavigate_blog: function(event){
+    var url = event.currentTarget.dataset.url;
+    console.log("[获取链接]： "+url)
     wx.navigateTo({
-      url: '../Blogs/blog1/blog1',
-    })
-  },
-  OnNavigate2: function(e){
-    wx.navigateTo({
-      url: '../Blogs/blog2/blog2',
+      url: '../blogView/blogView?info=' + JSON.stringify(url),
     })
   },
     //跳转对应的banner

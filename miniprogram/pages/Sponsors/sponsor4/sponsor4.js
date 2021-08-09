@@ -13,7 +13,7 @@ Page({
       nav:"../sponsor4/sponsor4",
       address:"北京 上海 深圳 杭州",
       name:"Easiversity 得易青年",
-      url:"https://s3.ax1x.com/2021/01/19/sgrv3d.png", //demo url
+      url:"cloud://wxapp-6gh5rfvs8d751a11.7778-wxapp-6gh5rfvs8d751a11-1305177527/Sponsors/Sponsor4.png", //demo url
       text:"为滞留在中国的留学生 建立线下全方位发展自习室\n\n优惠：\n上海 1799/月/人\n北京 1599/月/人\n深圳 1899/月/人\n杭州 1600/月/人\n\n地址：\n上海：淮海中路627号4层\n北京：王府井大街219号淘汇新天7层\n深圳：科发路19号华润置地大厦D座5层\n益田路6003号荣超商务中心B座4层\n杭州：上城区延安路292号7层\n\n电话：18939907089"
     },
     isMember:false,

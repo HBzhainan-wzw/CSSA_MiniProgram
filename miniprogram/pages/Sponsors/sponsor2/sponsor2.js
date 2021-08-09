@@ -13,7 +13,7 @@ Page({
       nav:"../sponsor2/sponsor2",
       address:"251 W 30th St, New York, NY, 10001",
       name:"Offer帮",
-      url:"https://s3.ax1x.com/2021/01/19/sgw5eU.png", //demo url
+      url:"cloud://wxapp-6gh5rfvs8d751a11.7778-wxapp-6gh5rfvs8d751a11-1305177527/Sponsors/Sponsor2.png", //demo url
       text:" Offer帮是首个专注于留学生求职的在线学习平台，由北大、常春藤校友联合创办，核心团队来自摩根大通、麦肯锡、摩根士丹利、普华永道、谷歌等全球顶尖公司。以涵盖各领域的专业导师、长期课研的求职核心课程、丰富的海内外企业资源，成为数万留学生信赖和首选的求职学习平台。\n\n优惠：单门课程50美金优惠\n\n地址：251 W 30th St, New York, NY, 10001\n\n电话：+1 404-626-2063\n"
     },
     isMember:false,

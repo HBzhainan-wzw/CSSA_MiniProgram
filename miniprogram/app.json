@@ -13,11 +13,13 @@
     "pages/Sponsors/sponsor4/sponsor4",
     "pages/Sponsors/sponsor5/sponsor5",
     "pages/Response/response",
-    "pages/SpringPosterEntrance/SpringPosterEntrance",
-    "pages/SelectionIntro/SelectionIntro",
-    
-    "pages/Selection/Selection",
-    "pages/createPoster/Create"
+    "pages/blogView/blogView",
+    "pages/flightReg/flightReg",
+    "pages/flightReg2/flightReg2",
+    "pages/flightAnc/flightAnc"
+
+
+
   ],
   "window": {
     "backgroundColor": "#F4DD73",

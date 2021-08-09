@@ -12,7 +12,7 @@ page{
 }
 .headerImg{
   position: relative;
-  height: 300rpx;
+  height: 290rpx;
 }
 .blank{
   height: 80rpx;

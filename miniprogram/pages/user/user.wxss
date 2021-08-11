@@ -1,4 +1,5 @@
 /* pages/user/user.wxss */
+@import "../../style/weui.wxss";
 
 
 .loginbutton{
@@ -153,6 +154,7 @@
 }
 
 .feedback {
+  
   margin: 0;
   padding: 0;
   background-color: transparent;
@@ -162,11 +164,25 @@
   justify-content: start;
   align-items: center;
   font-family: 'Times New Roman', Times, serif;
-  font-size: 38rpx;
+  font-size: 34rpx;
   font-weight: normal;
   flex-grow: 1;
 }
 
 .feedback::after {
   border: none;
+}
+
+
+
+#fb{
+  width: 120rpx;
+  display: inline-block;
+  box-sizing: border-box;
+  left: 0rpx;
+  padding: 0rpx;
+  margin: 0rpx;
+  font-size:27rpx;
+  color: #7d90a9;
+  font-weight: lighter;
 }

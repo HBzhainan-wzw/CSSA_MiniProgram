@@ -19,35 +19,35 @@
     <view class="weui-cells weui-cells_after-title" >
             <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
                 <view class="weui-cell__hd">
-                    <image src="../../images/index_0.png" style="width: 130rpx; height: 130rpx;"></image>
+                    <image src="../../images/checkbox.png" style="width: 100rpx; height: 100rpx;"></image>
                 </view>
                 <view class="weui-cell__bd">每日签到</view>
                 <view class="weui-cell__ft weui-cell__ft_in-access">说明文字</view>
             </navigator>
             <navigator url="" class="weui-cell weui-cell_example weui-cell_access" hover-class="weui-cell_active">
                 <view class="weui-cell__hd">
-                    <image src="../../images/index_0.png" style="width: 130rpx; height: 130rpx;"></image>
+                    <image src="../../images/box.png" style="width: 90rpx; height: 90rpx;"></image>
                 </view>
                 <view class="weui-cell__bd">填下你的perm number</view>
                 <view class="weui-cell__ft weui-cell__ft_in-access">说明文字</view>
             </navigator>
             <navigator url="" class="weui-cell weui-cell_example weui-cell_access" hover-class="weui-cell_active">
                 <view class="weui-cell__hd">
-                    <image src="../../images/index_0.png" style="width: 130rpx; height: 130rpx;"></image>
+                    <image src="../../images/correct.png" style="width: 130rpx; height: 130rpx;"></image>
                 </view>
                 <view class="weui-cell__bd">晒课表/加课群</view>
                 <view class="weui-cell__ft weui-cell__ft_in-access">说明文字</view>
             </navigator>
             <navigator url="" class="weui-cell weui-cell_example weui-cell_access" hover-class="weui-cell_active">
                 <view class="weui-cell__hd">
-                    <image src="../../images/index_0.png" style="width: 130rpx; height: 130rpx;"></image>
+                    <image src="../../images/redwrong.png" style="width: 130rpx; height: 130rpx;"></image>
                 </view>
                 <view class="weui-cell__bd">整理行李</view>
                 <view class="weui-cell__ft weui-cell__ft_in-access">说明文字</view>
             </navigator>
             <navigator url="" class="weui-cell weui-cell_example weui-cell_access" hover-class="weui-cell_active">
                 <view class="weui-cell__hd">
-                    <image src="../../images/index_0.png" style="width: 130rpx; height: 130rpx;"></image>
+                    <image src="../../images/blackwrong.png" style="width: 130rpx; height: 130rpx;"></image>
                 </view>
                 <view class="weui-cell__bd">离别饭</view>
                 <view class="weui-cell__ft weui-cell__ft_in-access">说明文字</view>

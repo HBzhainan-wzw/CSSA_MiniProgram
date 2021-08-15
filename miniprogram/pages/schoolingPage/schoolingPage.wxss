@@ -1,0 +1,41 @@
+/* pages/schoolingPage/schoolingPage.wxss */
+@import "../../style/weui.wxss";
+page {
+  background: rgba(247, 247, 247, 1);
+}
+
+.nav_tab {
+  width: 100%;
+  margin: 0rpx;
+  height: 100rpx;
+  display: flex;
+  background: #fff;
+  border-radius: 10rpx;
+  flex-direction: row;
+}
+/* 未选中的样式 */
+.common {
+  line-height: 100rpx;
+  text-align: center;
+  flex: 1;
+  color: #333;
+  font-size: 28rpx;
+  opacity: 0.5;
+}
+/* 选中时的样式 */
+.active {
+  line-height: 100rpx;
+  text-align: center;
+  color: black;
+  flex: 1;
+  font-size: 40rpx;
+}
+/* 下划线的样式 */
+.nav_underline {
+  background: #09bb07;
+  width: 130rpx;
+  height: 6rpx;
+  margin-top: -10rpx;
+  margin-left: 60rpx;
+  border-radius: 8rpx;
+}

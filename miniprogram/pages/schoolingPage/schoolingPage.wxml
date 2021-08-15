@@ -1,0 +1,194 @@
+<!--pages/schoolingPage/schoolingPage.wxml-->
+
+<!-- tab框  -->
+<view class="nav_title">
+  <view class="nav_tab">
+  <!-- 如果选中的下表等于当前的索引，就使用active class名，否则class名为common -->
+    <view wx:for="{{list}}" 
+      wx:key="list" 
+      class="{{selected==index?'active':'common'}}" 
+      data-index='{{index}}' 
+      bindtap="selected">
+    {{item}}
+  <!-- 如果选中的下表等于当前的索引，就添加下划线 -->   
+      <view class="{{selected==index?'nav_underline':''}}"></view>
+    </view>
+  </view>
+  <!-- tab1  -->
+  <view wx:if="{{selected == 0}}">
+    <view class="weui-cells weui-cells_after-title" >
+            <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                <view class="weui-cell__hd">
+                    <image src="../../images/index_0.png" style="width: 130rpx; height: 130rpx;"></image>
+                </view>
+                <view class="weui-cell__bd">每日签到</view>
+                <view class="weui-cell__ft weui-cell__ft_in-access">说明文字</view>
+            </navigator>
+            <navigator url="" class="weui-cell weui-cell_example weui-cell_access" hover-class="weui-cell_active">
+                <view class="weui-cell__hd">
+                    <image src="../../images/index_0.png" style="width: 130rpx; height: 130rpx;"></image>
+                </view>
+                <view class="weui-cell__bd">填下你的perm number</view>
+                <view class="weui-cell__ft weui-cell__ft_in-access">说明文字</view>
+            </navigator>
+            <navigator url="" class="weui-cell weui-cell_example weui-cell_access" hover-class="weui-cell_active">
+                <view class="weui-cell__hd">
+                    <image src="../../images/index_0.png" style="width: 130rpx; height: 130rpx;"></image>
+                </view>
+                <view class="weui-cell__bd">晒课表/加课群</view>
+                <view class="weui-cell__ft weui-cell__ft_in-access">说明文字</view>
+            </navigator>
+            <navigator url="" class="weui-cell weui-cell_example weui-cell_access" hover-class="weui-cell_active">
+                <view class="weui-cell__hd">
+                    <image src="../../images/index_0.png" style="width: 130rpx; height: 130rpx;"></image>
+                </view>
+                <view class="weui-cell__bd">整理行李</view>
+                <view class="weui-cell__ft weui-cell__ft_in-access">说明文字</view>
+            </navigator>
+            <navigator url="" class="weui-cell weui-cell_example weui-cell_access" hover-class="weui-cell_active">
+                <view class="weui-cell__hd">
+                    <image src="../../images/index_0.png" style="width: 130rpx; height: 130rpx;"></image>
+                </view>
+                <view class="weui-cell__bd">离别饭</view>
+                <view class="weui-cell__ft weui-cell__ft_in-access">说明文字</view>
+            </navigator>
+            <navigator url="" class="weui-cell weui-cell_example weui-cell_access" hover-class="weui-cell_active">
+                <view class="weui-cell__hd">
+                    <image src="../../images/index_0.png" style="width: 130rpx; height: 130rpx;"></image>
+                </view>
+                <view class="weui-cell__bd">赴美前最后一次团建</view>
+                <view class="weui-cell__ft weui-cell__ft_in-access">说明文字</view>
+            </navigator>
+        </view>
+  </view>
+
+  <!-- tab2 -->
+  <view wx:if="{{selected == 1}}">
+    <view class="weui-cells weui-cells_after-title" >
+            <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                <view class="weui-cell__hd">
+                    <image src="../../images/index_0.png" style="width: 130rpx; height: 130rpx;"></image>
+                </view>
+                <view class="weui-cell__bd">每日签到</view>
+                <view class="weui-cell__ft weui-cell__ft_in-access">说明文字</view>
+            </navigator>
+            <navigator url="" class="weui-cell weui-cell_example weui-cell_access" hover-class="weui-cell_active">
+                <view class="weui-cell__hd">
+                    <image src="../../images/index_0.png" style="width: 130rpx; height: 130rpx;"></image>
+                </view>
+                <view class="weui-cell__bd">填下返校日期</view>
+                <view class="weui-cell__ft weui-cell__ft_in-access">说明文字</view>
+            </navigator>
+            <navigator url="" class="weui-cell weui-cell_example weui-cell_access" hover-class="weui-cell_active">
+                <view class="weui-cell__hd">
+                    <image src="../../images/index_0.png" style="width: 130rpx; height: 130rpx;"></image>
+                </view>
+                <view class="weui-cell__bd">去学校乘坐的交通工具</view>
+                <view class="weui-cell__ft weui-cell__ft_in-access">说明文字</view>
+            </navigator>
+            <navigator url="" class="weui-cell weui-cell_example weui-cell_access" hover-class="weui-cell_active">
+                <view class="weui-cell__hd">
+                    <image src="../../images/index_0.png" style="width: 130rpx; height: 130rpx;"></image>
+                </view>
+                <view class="weui-cell__bd">机票票根</view>
+                <view class="weui-cell__ft weui-cell__ft_in-access">说明文字</view>
+            </navigator>
+            <navigator url="" class="weui-cell weui-cell_example weui-cell_access" hover-class="weui-cell_active">
+                <view class="weui-cell__hd">
+                    <image src="../../images/index_0.png" style="width: 130rpx; height: 130rpx;"></image>
+                </view>
+                <view class="weui-cell__bd">沿途风景</view>
+                <view class="weui-cell__ft weui-cell__ft_in-access">说明文字</view>
+            </navigator>
+            <navigator url="" class="weui-cell weui-cell_example weui-cell_access" hover-class="weui-cell_active">
+                <view class="weui-cell__hd">
+                    <image src="../../images/index_0.png" style="width: 130rpx; height: 130rpx;"></image>
+                </view>
+                <view class="weui-cell__bd">机场探店</view>
+                <view class="weui-cell__ft weui-cell__ft_in-access">说明文字</view>
+            </navigator>
+            <navigator url="" class="weui-cell weui-cell_example weui-cell_access" hover-class="weui-cell_active">
+                <view class="weui-cell__hd">
+                    <image src="../../images/index_0.png" style="width: 130rpx; height: 130rpx;"></image>
+                </view>
+                <view class="weui-cell__bd">Whats in my bag</view>
+                <view class="weui-cell__ft weui-cell__ft_in-access">说明文字</view>
+            </navigator>
+            <navigator url="" class="weui-cell weui-cell_example weui-cell_access" hover-class="weui-cell_active">
+                <view class="weui-cell__hd">
+                    <image src="../../images/index_0.png" style="width: 130rpx; height: 130rpx;"></image>
+                </view>
+                <view class="weui-cell__bd">飞机上的娱乐活动</view>
+                <view class="weui-cell__ft weui-cell__ft_in-access">说明文字</view>
+            </navigator>
+            <navigator url="" class="weui-cell weui-cell_example weui-cell_access" hover-class="weui-cell_active">
+                <view class="weui-cell__hd">
+                    <image src="../../images/index_0.png" style="width: 130rpx; height: 130rpx;"></image>
+                </view>
+                <view class="weui-cell__bd">旅途highlights</view>
+                <view class="weui-cell__ft weui-cell__ft_in-access">说明文字</view>
+            </navigator>
+        </view>
+  </view>
+  <!-- tab3 -->
+  <view wx:if="{{selected == 2}}">
+    <view class="weui-cells weui-cells_after-title" >
+            <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                <view class="weui-cell__hd">
+                    <image src="../../images/index_0.png" style="width: 130rpx; height: 130rpx;"></image>
+                </view>
+                <view class="weui-cell__bd">每日签到</view>
+                <view class="weui-cell__ft weui-cell__ft_in-access">说明文字</view>
+            </navigator>
+            <navigator url="" class="weui-cell weui-cell_example weui-cell_access" hover-class="weui-cell_active">
+                <view class="weui-cell__hd">
+                    <image src="../../images/index_0.png" style="width: 130rpx; height: 130rpx;"></image>
+                </view>
+                <view class="weui-cell__bd">活动体验打分</view>
+                <view class="weui-cell__ft weui-cell__ft_in-access">说明文字</view>
+            </navigator>
+            <navigator url="" class="weui-cell weui-cell_example weui-cell_access" hover-class="weui-cell_active">
+                <view class="weui-cell__hd">
+                    <image src="../../images/index_0.png" style="width: 130rpx; height: 130rpx;"></image>
+                </view>
+                <view class="weui-cell__bd">学生ID卡</view>
+                <view class="weui-cell__ft weui-cell__ft_in-access">说明文字</view>
+            </navigator>
+            <navigator url="" class="weui-cell weui-cell_example weui-cell_access" hover-class="weui-cell_active">
+                <view class="weui-cell__hd">
+                    <image src="../../images/index_0.png" style="width: 130rpx; height: 130rpx;"></image>
+                </view>
+                <view class="weui-cell__bd">到学校后的第一顿饭</view>
+                <view class="weui-cell__ft weui-cell__ft_in-access">说明文字</view>
+            </navigator>
+            <navigator url="" class="weui-cell weui-cell_example weui-cell_access" hover-class="weui-cell_active">
+                <view class="weui-cell__hd">
+                    <image src="../../images/index_0.png" style="width: 130rpx; height: 130rpx;"></image>
+                </view>
+                <view class="weui-cell__bd">拍夕阳照片</view>
+                <view class="weui-cell__ft weui-cell__ft_in-access">说明文字</view>
+            </navigator>
+            <navigator url="" class="weui-cell weui-cell_example weui-cell_access" hover-class="weui-cell_active">
+                <view class="weui-cell__hd">
+                    <image src="../../images/index_0.png" style="width: 130rpx; height: 130rpx;"></image>
+                </view>
+                <view class="weui-cell__bd">海滩打卡</view>
+                <view class="weui-cell__ft weui-cell__ft_in-access">说明文字</view>
+            </navigator>
+            <navigator url="" class="weui-cell weui-cell_example weui-cell_access" hover-class="weui-cell_active">
+                <view class="weui-cell__hd">
+                    <image src="../../images/index_0.png" style="width: 130rpx; height: 130rpx;"></image>
+                </view>
+                <view class="weui-cell__bd">购买生活用品</view>
+                <view class="weui-cell__ft weui-cell__ft_in-access">说明文字</view>
+            </navigator>
+            <navigator url="" class="weui-cell weui-cell_example weui-cell_access" hover-class="weui-cell_active">
+                <view class="weui-cell__hd">
+                    <image src="../../images/index_0.png" style="width: 130rpx; height: 130rpx;"></image>
+                </view>
+                <view class="weui-cell__bd">整理房间</view>
+                <view class="weui-cell__ft weui-cell__ft_in-access">说明文字</view>
+            </navigator>
+        </view>
+  </view>
+</view>

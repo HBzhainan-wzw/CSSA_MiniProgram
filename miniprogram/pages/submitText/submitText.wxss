@@ -1,0 +1,2 @@
+/* pages/submitText/submitText.wxss */
+@import "../../style/weui.wxss";

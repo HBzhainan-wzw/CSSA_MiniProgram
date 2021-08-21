@@ -5,6 +5,10 @@ Page({
    * 页面的初始数据
    */
   data: {
+    warnSigned: false,
+    signed: false,
+    signCounts: 0,
+    signedToday: false,
     selected: 0,
     list: ['返校前', '返校中', '返校后'],
   },
@@ -27,5 +31,26 @@ Page({
         selected: 2
       })
     } 
+  },
+  sign: function(e) {
+    var that = this;
+    if(that.data.signedToday == false){
+      that.setData({
+        signed: true,
+        signCounts: that.data.signCounts + 1,
+        signedToday: true,
+      })
+    }
+    else{
+      that.setData({
+        warnSigned: true,
+      })
+    }
+    
+  },
+  close: function(e) {
+    this.setData({
+      warnSigned: false,
+    })
   }
 })

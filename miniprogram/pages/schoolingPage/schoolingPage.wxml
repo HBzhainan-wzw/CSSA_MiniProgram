@@ -17,16 +17,19 @@
   <!-- tab1  -->
   <view wx:if="{{selected == 0}}">
     <view class="weui-cells weui-cells_after-title" >
-            <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+            <view bindtap="sign" class="weui-cell" hover-class="weui-cell_active">
                 <view class="weui-cell__hd">
-                    <image src="../../images/checkbox.png" style="width: 100rpx; height: 100rpx;"></image>
+                    <image wx:if="{{signed==true}}" src="../../images/checkbox.png" style="width: 100rpx; height: 100rpx;"></image>
+                    <image wx:if="{{signed==false}}" src="../../images/box.png" style="width: 100rpx; height: 100rpx;"></image>
                 </view>
                 <view class="weui-cell__bd">每日签到</view>
-                <view class="weui-cell__ft weui-cell__ft_in-access">说明文字</view>
-            </navigator>
+                <view class="weui-cell__ft weui-cell__ft_in-access">已签到{{signCounts}}天</view>
+                
+            
+            </view>
             <navigator url="" class="weui-cell weui-cell_example weui-cell_access" hover-class="weui-cell_active">
                 <view class="weui-cell__hd">
-                    <image src="../../images/box.png" style="width: 90rpx; height: 90rpx;"></image>
+                    <image src="../../images/box.png" style="width: 100rpx; height: 100rpx;"></image>
                 </view>
                 <view class="weui-cell__bd">填下你的perm number</view>
                 <view class="weui-cell__ft weui-cell__ft_in-access">说明文字</view>
@@ -140,7 +143,7 @@
                 <view class="weui-cell__bd">每日签到</view>
                 <view class="weui-cell__ft weui-cell__ft_in-access">说明文字</view>
             </navigator>
-            <navigator url="" class="weui-cell weui-cell_example weui-cell_access" hover-class="weui-cell_active">
+            <navigator url="../submitText/submitText" class="weui-cell weui-cell_example weui-cell_access" hover-class="weui-cell_active">
                 <view class="weui-cell__hd">
                     <image src="../../images/index_0.png" style="width: 130rpx; height: 130rpx;"></image>
                 </view>
@@ -191,4 +194,13 @@
             </navigator>
         </view>
   </view>
+</view>
+<view class="fadeIn" wx:if="{{warnSigned}}">
+    <view class="weui-mask"></view>
+    <view class="weui-dialog">
+        <view class="weui-dialog__bd">今日已签到</view>
+        <view class="weui-dialog__ft">
+            <a class="weui-dialog__btn weui-dialog__btn_primary" bindtap="close">知道了</a>
+        </view>
+    </view>
 </view>

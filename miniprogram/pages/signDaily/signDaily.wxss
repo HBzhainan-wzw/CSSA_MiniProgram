@@ -1,0 +1,24 @@
+/* pages/signDaily/signDaily.wxss */
+.page{
+  height: 100%;
+  width: 100%;
+}
+
+.image{
+  float:left;
+   width: 140rpx;
+   height: 140rpx;
+   margin-right: 7%;
+   margin-left:20%;
+ }
+ 
+ 
+ .sign{
+   margin-top: 10%;
+ }
+ 
+ .sign_info{
+   width: 100%;
+   color: #666;
+   font-size: 43rpx;
+ }

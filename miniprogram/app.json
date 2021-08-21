@@ -17,8 +17,9 @@
     "pages/flightReg/flightReg",
     "pages/flightReg2/flightReg2",
     "pages/flightAnc/flightAnc",
-    "pages/schoolingPage/schoolingPage"
-
+    "pages/schoolingPage/schoolingPage",
+    "pages/submitPhoto/submitPhoto"
+    
 
 
   ],

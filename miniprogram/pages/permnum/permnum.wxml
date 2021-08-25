@@ -1,0 +1,13 @@
+<!--pages/permnum/permnum.wxml-->
+
+<view>
+  <text class="title">记录下你的Perm Number</text>
+</view>
+<view class="textbox">
+    <input class="input" placeholder="eg. 1234567" maxlength="7" placeholder-style="color: grey" bindinput="nameInput"></input>
+</view>
+
+<view>
+  <view class="blank"></view>
+  <button type="primary">提交</button>
+</view>

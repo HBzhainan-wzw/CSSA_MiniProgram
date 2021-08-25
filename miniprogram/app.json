@@ -20,7 +20,9 @@
     "pages/schoolingPage/schoolingPage",
     "pages/submitPhoto/submitPhoto",
     "pages/signDaily/signDaily",
-    "pages/submitText/submitText"
+    "pages/submitText/submitText",
+    "pages/permnum/permnum"
+    
 
 
   ],

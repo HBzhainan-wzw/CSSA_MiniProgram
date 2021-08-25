@@ -1,0 +1,26 @@
+/* pages/permnum/permnum.wxss */
+.title{
+  position: relative;
+  top: 50rpx;
+  font-size: 130%;
+  left: 100rpx;
+}
+.blank{
+  position: relative;
+  height: 150rpx;
+}
+.input{
+  height: 80rpx;
+  width: 500rpx;
+  color: #000;
+}
+.textbox{
+  position: relative;
+  top: 100rpx;
+  left: 125rpx;
+  height: 80rpx;
+  width: 500rpx;
+  background-color: #fff;
+  color: #fff;
+  border-radius: 8%;
+}

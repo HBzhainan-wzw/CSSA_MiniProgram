@@ -2,7 +2,9 @@
 Page({
   
   data: {
-      files: []
+      files: [],
+      functionID: 0,
+      
   },
   chooseImage: function (e) {
       var that = this;

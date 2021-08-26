@@ -4,8 +4,21 @@ Page({
   data: {
       files: [],
       functionID: 0,
-      
+      titles: ["","标题1","标题2"],
+      guidelines: ["","规则1","规则2"],
+      title: "",
+      guideline: "",
   },
+  onLoad:function(options){
+    this.setData({
+        functionID: options.functionID,
+    })
+    this.setData({
+        title: this.data.titles[this.data.functionID],
+        guideline: this.data.guidelines[this.data.functionID],
+    })
+  },
+
   chooseImage: function (e) {
       var that = this;
       wx.chooseImage({

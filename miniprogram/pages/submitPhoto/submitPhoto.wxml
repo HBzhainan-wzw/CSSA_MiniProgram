@@ -1,8 +1,8 @@
 <!--pages/submitPhoto/submitPhoto.wxml-->
 <view class="page" >
     <view class="page__hd">
-        <view class="page__title">标题</view>
-        <view class="page__desc">详细规则</view>
+        <view class="page__title">{{title}}</view>
+        <view class="page__desc">{{guideline}}</view>
     </view>
     <view class="page__bd">
         <view class="weui-cells">

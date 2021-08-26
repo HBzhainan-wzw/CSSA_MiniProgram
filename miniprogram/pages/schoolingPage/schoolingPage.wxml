@@ -30,7 +30,7 @@
                 <view class="weui-cell__bd">填下你的perm number</view>
                 <view class="weui-cell__ft weui-cell__ft_in-access">去完成</view>
             </navigator>
-            <navigator url="../submitPhoto/submitPhoto" class="weui-cell weui-cell_example weui-cell_access" hover-class="weui-cell_active">
+            <navigator url="../submitPhoto/submitPhoto?functionID=1" class="weui-cell weui-cell_example weui-cell_access" hover-class="weui-cell_active">
                 
                 <view class="weui-cell__bd">晒课表/加课群</view>
                 <view class="weui-cell__ft weui-cell__ft_in-access">去完成</view>

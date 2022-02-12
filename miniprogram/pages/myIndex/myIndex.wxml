@@ -1,0 +1,75 @@
+<!--pages/myIndex/myIndex.wxml-->
+  <view class="container">
+    <!-- poster 滚动图层 -->
+    <swiper class="poster" indicator-dots="true" indicator-color="rgba(0,0,0,.3)" autoplay="true" 
+      interval="5000" duration="1000" circular="true">
+
+      <swiper-item>
+        <image class="poster" src="cloud://wxapp-6gh5rfvs8d751a11.7778-wxapp-6gh5rfvs8d751a11-1305177527/blog/小程序.png" data-url="https://mp.weixin.qq.com/s/o62pMcp_ZdEvEdd77Wy_jg" bindtap="OnNavigate_blog"></image>
+      </swiper-item>
+      <swiper-item>
+        <image class="poster" src="cloud://wxapp-6gh5rfvs8d751a11.7778-wxapp-6gh5rfvs8d751a11-1305177527/blog/SM.png" data-url="https://mp.weixin.qq.com/s/YdU3tOKYP99iUgU9Fxb8LQ" bindtap="OnNavigate_blog"></image>
+      </swiper-item>
+      <swiper-item>
+        <image class="poster" src="cloud://wxapp-6gh5rfvs8d751a11.7778-wxapp-6gh5rfvs8d751a11-1305177527/blog/疫苗全解读.png" data-url="https://mp.weixin.qq.com/s/3FoIiDKyzhWsEcZPexcYig" bindtap="OnNavigate_blog"></image>
+      </swiper-item>
+      <swiper-item>
+        <image class="poster" src="cloud://wxapp-6gh5rfvs8d751a11.7778-wxapp-6gh5rfvs8d751a11-1305177527/blog/清柚.png" data-url="https://mp.weixin.qq.com/s/U0mT1yTTR3pWr1RlSE2X1w" bindtap="OnNavigate_blog"></image>
+      </swiper-item>
+      <swiper-item>
+        <image class="poster" src="cloud://wxapp-6gh5rfvs8d751a11.7778-wxapp-6gh5rfvs8d751a11-1305177527/blog/UCSB3.png" data-url="https://mp.weixin.qq.com/s/EyynDFo6-cFQ4qKTjrW-hA" bindtap="OnNavigate_blog"></image>
+      </swiper-item>
+    </swiper>
+    <!-- 按钮们嘟嘟嘟 -->
+    <view class="button-image">
+      <view class="txt">
+        <image class="im-temp" src="cloud://wxapp-6gh5rfvs8d751a11.7778-wxapp-6gh5rfvs8d751a11-1305177527/Index/FlightReg.png" bindtap="flightNavigate"></image>
+        <view class="t-temp">新生接机</view>
+      </view>
+      <view class="txt">
+        <image class="im" src="cloud://wxapp-6gh5rfvs8d751a11.7778-wxapp-6gh5rfvs8d751a11-1305177527/Index/coupon.png" bindtap="sponsorNavigate"></image>
+        <view class="t">商家优惠</view>
+      </view>
+      <view class="txt">
+        <image class="im" src="cloud://wxapp-6gh5rfvs8d751a11.7778-wxapp-6gh5rfvs8d751a11-1305177527/Index/CourseList.png" bindtap="courseGroupNavigate"></image>
+        <view class="t">课群</view>
+      </view>
+      <view class="txt">
+        <image class="im" src="cloud://wxapp-6gh5rfvs8d751a11.7778-wxapp-6gh5rfvs8d751a11-1305177527/Index/CSSA-2.png" bindtap="introNavigate"></image>
+        <view class="t">CSSA</view>
+      </view>
+    </view>
+
+
+    <!-- 分割线 -->
+    <view class="divline"></view>
+    <view class="blank"></view>
+
+    <!-- 嘟嘟嘟推文们 -->
+
+    <view class="blogEntry" bindtap="OnNavigate_blog" data-url="https://mp.weixin.qq.com/s/ZTZ1lzYpnqGpC6j10VTyFQ">
+      <image class="blogEntryPic" mode="aspectFill" src="cloud://wxapp-6gh5rfvs8d751a11.7778-wxapp-6gh5rfvs8d751a11-1305177527/Index/新生见面会.png"></image>
+      <view class="blogEntryText">CSSA新生|线上新生见面会正式开幕！</view>
+    </view>
+    <view class="divline2"></view>
+    <view class="blogEntry" bindtap="OnNavigate_blog" data-url="https://mp.weixin.qq.com/s/R-Ntik6kPaI6CD1XLmewvQ">
+      <image class="blogEntryPic" mode="aspectFill" src="cloud://wxapp-6gh5rfvs8d751a11.7778-wxapp-6gh5rfvs8d751a11-1305177527/Index/职位公示.jpg"></image>
+      <view class="blogEntryText">UCSB CSSA 2021-2022年度主席团与部长团公示</view>
+    </view>
+    <view class="divline2"></view>
+    <view class="blogEntry" bindtap="OnNavigate_blog" data-url="https://mp.weixin.qq.com/s/NWRWRdS3wxY1kTzQ0lNDMg">
+      <image class="blogEntryPic" mode="aspectFill" src="cloud://wxapp-6gh5rfvs8d751a11.7778-wxapp-6gh5rfvs8d751a11-1305177527/blog/小程序2.png"></image>
+      <view class="blogEntryText">CSSA外联 | 让我们相约UCSB CSSA官方微信小程序吧!</view>
+    </view>
+    <view class="divline2"></view>
+    <view class="blogEntry" bindtap="OnNavigate_blog" data-url="https://mp.weixin.qq.com/s/Eu2LUBxGsI67O990Dq7KKg">
+      <image class="blogEntryPic" mode="aspectFill" src="cloud://wxapp-6gh5rfvs8d751a11.7778-wxapp-6gh5rfvs8d751a11-1305177527/blog/UCSB.png"></image>
+      <view class="blogEntryText">Congratulations! UCSB 2025er CSSA官方新生群入口正式开放！</view>
+    </view>
+    <view class="divline2"></view>
+    <view class="blogEntry" bindtap="OnNavigate_blog" data-url="https://mp.weixin.qq.com/s/i196_e3sYb3hPtEs-PvfaQ">
+      <image class="blogEntryPic" mode="aspectFill" src="cloud://wxapp-6gh5rfvs8d751a11.7778-wxapp-6gh5rfvs8d751a11-1305177527/blog/UCSB2.png"></image>
+      <view class="blogEntryText">UCSB杨校长最新邮件&新生Cali Training安排 | CSSA快讯</view>
+    </view>
+
+  </view>

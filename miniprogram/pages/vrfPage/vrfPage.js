@@ -36,7 +36,7 @@ Page({
         }else{
           console.log('[Base]true')
           db.collection('blMember').where({
-            _perm: app.globalData.permNum
+            _permNum: app.globalData.permNum
           }).get({
             success: function(res_1){
               if(res_1.data.length != 0){

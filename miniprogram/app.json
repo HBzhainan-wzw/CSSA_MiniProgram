@@ -1,7 +1,9 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/user/index"
+    "pages/user/index",
+    "pages/courseList/index",
+    "pages/blackCard/index"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
@@ -9,6 +11,25 @@
     "navigationBarBackgroundColor": "#F6F6F6",
     "navigationBarTitleText": "云开发 QuickStart",
     "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#000000",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/index_0.png",
+        "selectedIconPath": "images/index_1.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/user/index",
+        "iconPath": "images/me_0.png",
+        "selectedIconPath": "images/me_1.png",
+        "text": "我的"
+      }
+    ]
   },
   "sitemapLocation": "sitemap.json",
   "style": "v2",

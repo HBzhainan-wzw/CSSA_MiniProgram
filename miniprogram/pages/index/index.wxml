@@ -1,7 +1,7 @@
 <!--index.wxml-->
 <view class="container">
   <image class="logoStyle" src="/images/logo.jpg"></image>
-  <view class="buttonBox" bindtap="jumpPage" data-page="/pages/blackCard/index">黑卡 </view>
-  <view class="buttonBox" bindtap="jumpPage" data-page="/pages/courseList/index">课群 </view>
-
+  <view class="buttonBox" bindtap="jumpPage" data-page="/pages/blackCard/index">黑卡</view>
+  <view class="buttonBox" bindtap="jumpPage" data-page="/pages/courseList/index">课群</view>
+  <view class="buttonBox" bindtap="jumpPage" data-page="/pages/rateProf/index">教授</view>
 </view>

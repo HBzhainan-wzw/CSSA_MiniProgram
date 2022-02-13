@@ -1,66 +1,43 @@
 // pages/courseList/index.js
 Page({
-
-  /**
-   * 页面的初始数据
-   */
+  //mixins: [require('../courseList/common')],
   data: {
-
+    list: [
+      {
+        id: 'math',
+        name: 'MATH',
+        open: false,
+        pages: ['MATH 4A', 'MATH 4B', 'MATH 6A'],
+      },
+      {
+        id: 'cs',
+        name: 'CMPSC',
+        open: false,
+        pages: ['CMPSC 8', 'CMPSC 16', 'CMPSC 24', 'CMPSC 32'],
+      },
+      {
+        id: 'chem',
+        name: 'CHEM',
+        open: false,
+        pages: ['CHEM 1A/1AL', 'CHEM 1B/1BL'],
+      },
+    ],
   },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-
+  kindToggle(e) {
+    const { id } = e.currentTarget; const { list } = this.data;
+    for (let i = 0, len = list.length; i < len; ++i) {
+      if (list[i].id == id) {
+        list[i].open = !list[i].open;
+      } else {
+        list[i].open = false;
+      }
+    }
+    this.setData({
+      list,
+    });
   },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
+  changeTheme() {
+    console.log(this.data);
+    getApp().themeChanged(this.data.theme === 'light' ? 'dark' : 'light');
   },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
-  }
-})
+});

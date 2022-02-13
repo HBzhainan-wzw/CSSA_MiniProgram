@@ -1,25 +1,24 @@
 // pages/courseList/index.js
 Page({
-  //mixins: [require('../courseList/common')],
   data: {
     list: [
       {
         id: 'math',
         name: 'MATH',
         open: false,
-        pages: ['MATH 4A', 'MATH 4B', 'MATH 6A'],
+        pages: ['MATH4A', 'MATH4B', 'MATH6A'],
       },
       {
         id: 'cs',
         name: 'CMPSC',
         open: false,
-        pages: ['CMPSC 8', 'CMPSC 16', 'CMPSC 24', 'CMPSC 32'],
+        pages: ['CMPSC8', 'CMPSC16', 'CMPSC24', 'CMPSC32'],
       },
       {
         id: 'chem',
         name: 'CHEM',
         open: false,
-        pages: ['CHEM 1A/1AL', 'CHEM 1B/1BL'],
+        pages: ['CHEM1A/1AL', 'CHEM1B/1BL'],
       },
     ],
   },

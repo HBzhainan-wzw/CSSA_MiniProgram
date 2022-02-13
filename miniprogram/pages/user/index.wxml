@@ -1,2 +1,44 @@
 <!--pages/user/index.wxml-->
-<text>pages/user/index.wxml</text>
+<view>
+  <!-- 用户信息/登录键 -->
+  <!-- <view hidden="{{!userInfo.avatarUrl}}"> -->
+    <!-- <image class = "backgroundImage" src= "{{userInfo.avatarUrl}}"></image> -->
+    <image class="backgroundImage" src="cloud://my-cloud-4g5edkwzfa83ec44.6d79-my-cloud-4g5edkwzfa83ec44-1304258496/wallpaper.jpg"></image>
+    <view class="container">
+      <view class = "usericon">
+        <open-data type="userAvatarUrl"></open-data>
+      </view>
+      <view class = "userid">
+        <open-data type="userNickName"></open-data>
+      </view>  
+    
+    </view>
+
+      <!-- 功能条 -->
+    <view class="barHolder">
+      <!-- 设置界面 -->
+      <!-- <navigator class="settingBar" >设置</navigator> -->
+      <view class="buttom" bindtap="jumpPage" data-page="/pages/user/statement">免责声明</view>
+      <view class="line"></view>
+    </view>
+
+   
+
+    <!-- <view class="mine-provision">
+		<button open-type="feedback" class="feedback">
+			投诉建议
+		</button> -->
+	<!-- </view> -->
+    
+
+
+  <!-- 这是一条代码 -->
+  <!-- </view> -->
+  <!-- <view hidden="{{userInfo.avatarUrl}}">
+    <view class="userloginbutton">
+      <navigator url="/pages/loginpage/loginpage" class="loginNaviBar" >登录</navigator>
+    </view>
+  </view> -->
+</view>
+<button open-type="feedback" class="button">投诉建议</button>
+<view class="versionNum">myUCSB v2.0.0</view>

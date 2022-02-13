@@ -1,2 +1,14 @@
-<!--pages/rateProf/index.wxml-->
-<text>pages/rateProf/index.wxml</text>
+
+
+<view class="container">
+  <view class="page-section">
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <input class="weui-input" type='text' name='input' maxlength="20" placeholder="请输入教授的姓名" bindinput="nameInput"/>
+      </view>
+    </view>
+  </view>
+  <view class="blank2"></view>
+  <button size="default" bindtap="onClickButton" type="primary">搜索</button>
+
+</view>

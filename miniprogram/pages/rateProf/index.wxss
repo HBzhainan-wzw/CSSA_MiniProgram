@@ -1,1 +1,8 @@
 /* pages/rateProf/index.wxss */
+
+@import "/pages/index/weui.wxss";
+.blank2{
+  position: relative;
+  height: 30rpx;
+}
+

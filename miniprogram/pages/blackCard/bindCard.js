@@ -6,7 +6,7 @@ Page({
    */
   data: {
     phoneNum: -1,
-    id:""
+    id: ""
   },
   phoneInput: function (e) {
     app.globalData.phoneNum = e.detail.phoneNum
@@ -33,19 +33,38 @@ Page({
     }).get({
       success: res => {
         console.log("[searchBase success]: ", res)
-        console.log("[searchBase success]: ", app.globalData.openid)
-        if (res.data.length == 0) {
+        if (res.data.length != 0) {
           console.log("[Base]false")
-          wx.showToast({
-            title: '绑定成功',
-            icon: 'none',
-            duration: 6000
-          })
-          console.log(res.data._id)
+          if (res.data[0].openID == "-1") {
+            wx.showToast({
+              title: '绑定成功',
+              icon: 'none',
+              duration: 6000
+            })
+
+            this.setData({
+              id: res.data[0]._id
+            })
+            console.log(this.data.id)
+            console.log(app.globalData.openid)
+            db.collection('BlackCard').doc(this.data.id).update({
+              data:{
+                openID: app.globalData.openid
+              }
+            })
+
+          } else{
+            console.log("[Base]True")
+            wx.showToast({
+              title: '检测到已绑定过黑卡，请重新输入手机号',
+              icon: 'none',
+              duration: 6000
+            })
+          }
         } else {
           console.log("[Base]True")
           wx.showToast({
-            title: '手机号已被绑定',
+            title: '滚去买黑卡',
             icon: 'none',
             duration: 6000
           })

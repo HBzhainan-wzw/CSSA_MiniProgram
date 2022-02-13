@@ -1,5 +1,3 @@
-<!--pages/courseQRCode/index.wxml-->
-<!--pages/ClassQRCode/ClassQRCode.wxml-->
 <view class="container">
   <view class="subject">为了营造良好的课群环境，我保证不会在群中推广代写，也不会将二维码发送给别人或是邀请别人进入群聊</view>
   <view class="blank"></view>

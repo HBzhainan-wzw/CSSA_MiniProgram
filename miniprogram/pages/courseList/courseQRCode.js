@@ -1,3 +1,4 @@
+// pages/courseList/courseQRCode.js
 Page({
 
   /**

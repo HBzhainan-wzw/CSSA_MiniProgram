@@ -1,1 +1,123 @@
-/* pages/user/index.wxss */
+/* pages/user/user.wxss */
+
+
+.loginbutton{
+  position: relative;
+  top:500rpx;
+  font: menu;
+  font-size: medium;
+  color:white;
+  background-color:rgb(47, 136, 25);
+}
+
+.header {
+  margin: 90rpx 0 90rpx 50rpx;
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+  width: 650rpx;
+  height: 300rpx;
+  line-height: 450rpx;
+}
+
+.header image {
+  width: 200rpx;
+  height: 200rpx;
+}
+
+.content {
+  margin-left: 50rpx;
+  margin-bottom: 90rpx;
+}
+
+.content text {
+  display: block;
+  color: #9d9d9d;
+  margin-top: 40rpx;
+}
+
+.bottom {
+  height: 120rpx;
+  width: 2000rpx;
+  border-radius: 80rpx;
+  margin: 70rpx 50rpx;
+  font-size: 35rpx;
+  background-color: green;
+  color: #fff;
+}
+.backgroundImage{
+  position: relative;
+  width: 100%;
+  height: 400rpx;
+  filter: blur();
+  filter: blur();
+
+}
+.usericon{
+  position: relative;
+  top: -300rpx;
+  display: flex;     
+  justify-self: center;
+  align-self: center;      
+  height: 140rpx;
+  width: 140rpx;
+  border-radius: 50%;
+  overflow:hidden;
+}
+.userid{
+  display: flex;
+  position: relative;
+  top: -270rpx;
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  font-size: large;
+  color: #FFF;
+}
+
+.buttom{
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 40rpx;
+  top: -40rpx;
+  left: 90rpx;
+  font-size: 110%;
+}
+
+.line{
+  position: relative;
+  top:10rpx;
+  display: flex;
+  align-self: center;
+  justify-self: center;
+  left: 10%;
+  height: 3rpx;
+  background-color: lightgray;
+  width: 80%;
+  margin-bottom: 30rpx;
+}
+.barHolder{
+  position: relative;
+  top: -100rpx;
+}
+.button{
+  bottom: 110rpx;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 210rpx;
+}
+.versionNum{
+  bottom: 50rpx;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 280rpx;
+  size: 85%;
+  color: lightgray;
+}
+
+
+

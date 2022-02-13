@@ -4,6 +4,7 @@
     "pages/user/index",
     "pages/user/statement",
     "pages/courseList/index",
+    "pages/courseList/courseQRCode",
     "pages/blackCard/index",
     "pages/rateProf/index",
     "pages/rateProf/detail"

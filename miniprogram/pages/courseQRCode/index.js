@@ -25,18 +25,18 @@ Page({
     })
 
     const db = wx.cloud.database()
-    db.collection('CourseList').where({
+    db.collection('courseQRCode').where({
        subject: options.subject
     }).get({
       success: res=>{
-        console.log("[search success]:  " ,options.subject);
+        console.log("[search success]:" ,options.subject);
         if(res.data.length == 0){
-          console.log("[二维码获取失败]:  没有对象", res);
+          console.log("[二维码获取失败]:没有对象", res);
         }else{
           this.setData({
             QRurl: res.data[0].url
           })
-          console.log("[二维码获取成功]：  ", this.data.QRurl );
+          console.log("[二维码获取成功]", this.data.QRurl );
         }
       },
       fail: res=>{

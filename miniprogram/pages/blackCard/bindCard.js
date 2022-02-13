@@ -1,13 +1,12 @@
 // pages/blackCard/bindCard.js
 const app = getApp()
 Page({
-
   /**
    * 页面的初始数据
    */
   data: {
-    openID: '',
-    phoneNum: -1
+    phoneNum: -1,
+    id:""
   },
   phoneInput: function (e) {
     app.globalData.phoneNum = e.detail.phoneNum
@@ -34,20 +33,23 @@ Page({
     }).get({
       success: res => {
         console.log("[searchBase success]: ", res)
+        console.log("[searchBase success]: ", app.globalData.openid)
         if (res.data.length == 0) {
           console.log("[Base]false")
           wx.showToast({
-            title: '您还不是黑卡会员，快点加入我们>_<',
+            title: '绑定成功',
             icon: 'none',
             duration: 6000
           })
+          console.log(res.data._id)
         } else {
           console.log("[Base]True")
           wx.showToast({
-            title: '您是黑卡会员',
+            title: '手机号已被绑定',
             icon: 'none',
             duration: 6000
           })
+
         }
       }
     })

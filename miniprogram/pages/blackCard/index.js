@@ -27,6 +27,8 @@ Page({
         type: 'getOpenId'
       }
     }).then((resp) => {
+      app.globalData.openid=resp.result.openid
+      console.log(app.globalData.openid)
       this.setData({
         haveGetOpenId: true,
         openId: resp.result.openid
@@ -46,7 +48,8 @@ Page({
     }).get({
       success: res => {
         console.log("[searchBase success]: ", res)
-        if (res.data.length == 0) {
+        console.log(res.data)
+        if (res.data.length != 0) {
           console.log("[Base]false")
           /*
           wx.showToast({

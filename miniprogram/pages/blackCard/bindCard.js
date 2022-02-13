@@ -44,7 +44,7 @@ Page({
         } else {
           console.log("[Base]True")
           wx.showToast({
-            title: '您是黑卡会员，快点加入我们>_<',
+            title: '您是黑卡会员',
             icon: 'none',
             duration: 6000
           })

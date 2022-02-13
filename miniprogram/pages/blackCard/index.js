@@ -14,42 +14,17 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    console.log('1');
-    wx.showLoading({
-      title: '',
-    });
-   wx.cloud.callFunction({
-      name: 'quickstartFunctions',
-      config: {
-        env: this.data.envId
-      },
-      data: {
-        type: 'getOpenId'
-      }
-    }).then((resp) => {
-      app.globalData.openid=resp.result.openid
-      console.log(app.globalData.openid)
-      this.setData({
-        haveGetOpenId: true,
-        openId: resp.result.openid
-      });
-     wx.hideLoading();
-   }).catch((e) => {
-      this.setData({
-        showUploadTip: true
-      });
-     wx.hideLoading();
-    });
     
     const db = wx.cloud.database()
-    
+    console.log(app.globalData.openid)
     db.collection('BlackCard').where({
-      openID: app.globalData.openId
+      openID: app.globalData.openid
     }).get({
       success: res => {
         console.log("[searchBase success]: ", res)
         console.log(res.data)
-        if (res.data.length != 0) {
+        console.log(app.globalData.openid)
+        if (res.data.length == 0) {
           console.log("[Base]false")
           /*
           wx.showToast({
@@ -62,6 +37,12 @@ Page({
           })
         } else {
           console.log("[Base]True")
+          console.log(res.data[0].phoneNum)
+          this.setData({
+            openId: res.data[0].openID,
+            phoneNum: res.data[0].phoneNum
+            
+          })
           wx.showToast({
             title: '您是黑卡会员',
             icon: 'none',

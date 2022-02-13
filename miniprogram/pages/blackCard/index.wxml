@@ -1,7 +1,16 @@
 <!--pages/blackCard/index.wxml-->
 
-<page-meta root-font-size="system"/>
 
+<view class="page" data-weui-theme="{{theme}}" data-weui-mode="{{mode}}">
+<view class="weui-article">
+<view aria-role="heading" aria-level="4" class="weui-article__h1">尊贵的黑卡用户</view>
+<view class="image">
+		<image class="weui-article__img" src="../../images/wx_login.jpg" mode="aspectFit" style="height: 180px;" />
+</view>
+
+</view>
+
+</view>
 
 
 

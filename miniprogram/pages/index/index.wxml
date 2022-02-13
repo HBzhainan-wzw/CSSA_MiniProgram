@@ -1,8 +1,7 @@
 <!--index.wxml-->
 <view class="container">
+  <image class="logoStyle" src="/images/logo.jpg"></image>
+  <view class="buttonBox" bindtap="jumpPage" data-page="/pages/blackCard/index">黑卡 </view>
+  <view class="buttonBox" bindtap="jumpPage" data-page="/pages/courseList/index">课群 </view>
 
-  <view class="title">一些个首页</view>
-
-  <view bindtap="jumpPage" data-page="/pages/blackCard/index">黑卡功能 </view>
-  <view bindtap="jumpPage" data-page="/pages/courseList/index">课群 </view>
 </view>

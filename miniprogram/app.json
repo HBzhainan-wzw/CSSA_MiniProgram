@@ -5,6 +5,7 @@
     "pages/user/statement",
     "pages/courseList/index",
     "pages/blackCard/index",
+    "pages/blackCard/bindCard",
     "pages/rateProf/index",
     "pages/rateProf/detail"
   ],

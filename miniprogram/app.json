@@ -6,6 +6,7 @@
     "pages/courseList/index",
     "pages/courseList/courseQRCode",
     "pages/blackCard/index",
+    "pages/blackCard/bindCard",
     "pages/rateProf/index",
     "pages/rateProf/detail"
   ],

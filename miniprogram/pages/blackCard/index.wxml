@@ -1,2 +1,36 @@
 <!--pages/blackCard/index.wxml-->
-<text>pages/blackCard/index.wxml</text>
+
+
+<view class="page" data-weui-theme="{{theme}}" data-weui-mode="{{mode}}">
+<view class="weui-article">
+<view wx:if="{{isMember==1}}" aria-role="heading" aria-level="4" class="weui-article__h1">尊贵的黑卡会员</view>
+<view wx:if="{{isMember == -1}}" aria-role="heading" aria-level="4" class="weui-article__h1">您还不是黑卡会员</view>
+<view wx:if="{{isMember == -1}}" aria-role="heading" aria-level="4" class="weui-article__h1">请点击底部链接绑定黑卡</view>
+<view class="image">
+		<image wx:if="{{isMember==1 && front== 1 }}" catchtap="showFrontorBack" class="weui-article__img" src="../../images/BlackCard.jpeg" mode="aspectFit" style="height: 180px;" />
+    <image wx:if="{{isMember==1 && front== -1 }}" catchtap="showFrontorBack" class="weui-article__img" src="../../images/BlackCardBack.jpeg" mode="aspectFit" style="height: 180px;" />
+		
+</view>
+
+</view>
+
+</view>
+
+
+
+	
+	
+
+
+
+
+			
+
+
+
+<view class="weui-footer">
+	<view class="weui-footer__links">
+		<navigator url="./bindCard" class="weui-footer__link">黑卡绑定入口</navigator>
+	</view>
+	<view class="weui-footer__text">Copyright © UCSB CSSA</view>
+</view>

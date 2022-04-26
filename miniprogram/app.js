@@ -18,5 +18,22 @@ App({
     }
 
     this.globalData = {};
+    wx.showLoading({
+      title: '',
+    });
+    wx.cloud.callFunction({
+      name:'quickstartFunctions',
+      data:{type: 'getOpenId'},
+      success: res=>{
+
+        this.globalData.openid=res.result.openid
+        console.log(this.globalData.openid)
+        wx.hideLoading()
+      },
+      fail: err=>{
+        console.error("调用失败")
+      }
+    })
+
   }
 });

@@ -7,7 +7,8 @@
 <view wx:if="{{isMember == -1}}" aria-role="heading" aria-level="4" class="weui-article__h1">您还不是黑卡会员</view>
 <view wx:if="{{isMember == -1}}" aria-role="heading" aria-level="4" class="weui-article__h1">请点击底部链接绑定黑卡</view>
 <view class="image">
-		<image wx:if="{{isMember==1}}" class="weui-article__img" src="../../images/BlackCard.jpeg" mode="aspectFit" style="height: 180px;" />
+		<image wx:if="{{isMember==1 && front== 1 }}" catchtap="showFrontorBack" class="weui-article__img" src="../../images/BlackCard.jpeg" mode="aspectFit" style="height: 180px;" />
+    <image wx:if="{{isMember==1 && front== -1 }}" catchtap="showFrontorBack" class="weui-article__img" src="../../images/BlackCardBack.jpeg" mode="aspectFit" style="height: 180px;" />
 		
 </view>
 

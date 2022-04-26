@@ -8,8 +8,8 @@ Page({
   data: {
     openId: '',
     phoneNum: -1,
-    isMember: 0
-
+    isMember: 0,
+    front: 1,
   },
 
   /**
@@ -109,5 +109,12 @@ Page({
 
   },
 
+  showFrontorBack: function(options) {
+    console.log("showFrontorBack")
+    
+    this.setData({
+      front: this.data.front * (-1)
+    })
+  },
   
 })

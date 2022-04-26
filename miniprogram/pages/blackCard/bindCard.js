@@ -42,6 +42,7 @@ Page({
               duration: 6000
             })
 
+
             this.setData({
               id: res.data[0]._id
             })
@@ -52,6 +53,10 @@ Page({
                 openID: app.globalData.openid
               }
             })
+            wx.navigateBack({
+              delta: 1,
+            })
+
 
           } else{
             console.log("[Base]True")

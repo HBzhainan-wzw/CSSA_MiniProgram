@@ -36,16 +36,27 @@ Page({
         if (res.data.length != 0) {
           console.log("[Base]false")
           if (res.data[0].openID == "-1") {
+            
             wx.showToast({
               title: '绑定成功',
               icon: 'none',
-              duration: 6000
+              duration: 6000,
+              mask:true,
+              success: function () {
+                setTimeout(function () {
+                  //要延时执行的代码
+                  wx.navigateBack({
+                    delta: 1
+                   })
+                }, 1500) //延迟时间
+              }
             })
 
 
             this.setData({
               id: res.data[0]._id
             })
+
             console.log(this.data.id)
             console.log(app.globalData.openid)
             db.collection('BlackCard').doc(this.data.id).update({
@@ -53,9 +64,11 @@ Page({
                 openID: app.globalData.openid
               }
             })
+            /*
             wx.navigateBack({
-              delta: 1,
+              delta: 2,
             })
+            */
 
 
           } else{

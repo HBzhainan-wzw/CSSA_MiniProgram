@@ -26,10 +26,8 @@
 
 		<view class="weui-form__extra-area">
 			<view class="weui-footer">
-				<view class="weui-footer__links">
-					<navigator url="javascript:" class="weui-footer__link">底部链接文本</navigator>
-				</view>
-				<view class="weui-footer__text">Copyright © 2008-2019 weui.io</view>
+
+				<view class="weui-footer__text">遇到问题 请联系微信：syf_Sean_</view>
 			</view>
 		</view>
 	</view>

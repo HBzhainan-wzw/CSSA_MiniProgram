@@ -82,7 +82,7 @@ Page({
         } else {
           console.log("[Base]True")
           wx.showToast({
-            title: '滚去买黑卡',
+            title: '您还不是黑卡会员，快点加入我们',
             icon: 'none',
             duration: 6000
           })

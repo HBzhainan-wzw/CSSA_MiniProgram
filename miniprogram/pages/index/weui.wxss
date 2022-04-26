@@ -1040,7 +1040,7 @@ icon {
   color: #09BB07;
   white-space: nowrap;
 }
- * WeUI v2.5.4 (https://github.com/weui/weui-wxss)
+ /* WeUI v2.5.4 (https://github.com/weui/weui-wxss)
  * Copyright 2021 Tencent, Inc.
  * Licensed under the MIT license
  */

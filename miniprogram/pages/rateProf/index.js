@@ -5,7 +5,9 @@ Page({
    * 页面的初始数据
    */
   data: {
-    searchName: ""
+    searchName: "",
+    resultArr: {},
+    hideResult: true
   },
 
   /**
@@ -18,11 +20,23 @@ Page({
     this.setData({
       searchName: e.detail.value
     })
-    console.log("[search]: " + this.data.searchName);
+    //console.log("[search]: " + this.data.searchName);
   },
- onClickBotton: function(e){
-  
-
+ onClickButton: function(e){
+  wx.cloud.callFunction({
+    name: 'getProfData',
+    data: {
+      inputValue: this.data.searchName
+    }
+  }).then(res=>{
+    this.setData({
+      resultArr: res.result.data
+    })
+    console.log("[搜索成功]： ");
+    console.log(this.data.resultArr);    
+  })
+ },
+ showResult: function(e){
 
 
  }
